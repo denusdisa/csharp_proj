@@ -1,0 +1,73 @@
+﻿<Window x:Class="csharp_proj.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:csharp_proj"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="491.334" Width="898.001" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <Window.Resources>
+        <Color x:Key="Color1">#FF62A17F</Color>
+    </Window.Resources>
+    <Grid Margin="10,10,12.333,8.333" RenderTransformOrigin="0.457,0.371" Background="#FF2493D2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="89*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="24*"/>
+            <ColumnDefinition Width="617*"/>
+            <ColumnDefinition Width="42*"/>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="119*"/>
+            <ColumnDefinition Width="42*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="button" Content="Зробити обрахунки" HorizontalAlignment="Left" Margin="1.667,253.333,0,0" VerticalAlignment="Top" Width="132" Click="button_Click" Grid.Column="2" Grid.Row="1" Height="20"/>
+        <Button x:Name="button1" Content="Додати " HorizontalAlignment="Left" Margin="41,104,0,0" VerticalAlignment="Top" Width="120" Click="button1_Click" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="3" Height="20"/>
+        <Label x:Name="label" Content="Нове коло" HorizontalAlignment="Left" Margin="40,19,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.491,0.577" Grid.Column="3" Grid.ColumnSpan="3" Height="26" Width="68"/>
+        <TextBox x:Name="r" HorizontalAlignment="Left" Height="22" Margin="40,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" PreviewTextInput="r_PreviewTextInput" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="x" HorizontalAlignment="Left" Height="22" Margin="41,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119" PreviewTextInput="r_PreviewTextInput" Grid.Column="3" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
+        <TextBox x:Name="y" HorizontalAlignment="Left" Height="23" Margin="41,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119" PreviewTextInput="r_PreviewTextInput" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <Button x:Name="download" Content="Відкрити файл" HorizontalAlignment="Left" Margin="23.667,4.333,0,0" VerticalAlignment="Top" Width="134" Click="download_Click" Grid.Column="1" Height="20" Grid.ColumnSpan="2" Grid.Row="1"/>
+        <Label x:Name="label1" Content="Робота з файлами" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="21.667,18,0,0" Grid.Column="1" Height="26" Width="110" Grid.ColumnSpan="2"/>
+        <Button x:Name="save" Content="Зберегти файл" HorizontalAlignment="Left" Margin="23.667,33.333,0,0" VerticalAlignment="Top" Width="134" Click="save_Click" Grid.Column="1" Grid.Row="1" Height="21" Grid.ColumnSpan="2"/>
+        <Label x:Name="label3" Content="Максимум кіл, що перетинаються" HorizontalAlignment="Left" Margin="22.667,139,0,0" VerticalAlignment="Top" Height="24" Width="201" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="1.667,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" IsHitTestVisible="True" IsReadOnlyCaretVisible="True" IsReadOnly="True" Grid.Column="2" Grid.Row="1"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="1.667,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" IsReadOnly="True" IsReadOnlyCaretVisible="True" Grid.Column="2" Grid.Row="1"/>
+        <Label x:Name="label4" Content="Кола, що знаходяться в кластері" HorizontalAlignment="Left" Margin="20.667,190,0,0" VerticalAlignment="Top" Width="190" Grid.Column="1" Grid.Row="1" Height="26" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.455"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="button3" Content="Видалити коло " HorizontalAlignment="Left" Margin="0,331.333,0,0" VerticalAlignment="Top" Width="119" Click="button3_Click" Grid.Column="4" Grid.Row="1" Grid.ColumnSpan="2" Height="20"/>
+        <Label x:Name="label5" Content="Введіть номер кола " HorizontalAlignment="Left" Margin="38,144.333,0,0" VerticalAlignment="Top" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="3" Height="26" Width="121"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="41,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" PreviewTextInput="textBox2_PreviewTextInput" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <Button x:Name="button4" Content="Видалити всі кола" HorizontalAlignment="Left" Margin="23.667,103.333,0,0" VerticalAlignment="Top" Width="134" Click="button4_Click" Grid.Column="1" Grid.Row="1" Height="20" Grid.ColumnSpan="2"/>
+        <Button x:Name="button5" Content="Зберегти як картинку" HorizontalAlignment="Left" Margin="23.667,68.333,0,0" VerticalAlignment="Top" Width="134" Click="button5_Click" Grid.Column="1" Grid.Row="1" Height="20" Grid.ColumnSpan="2"/>
+        <Label x:Name="label6" Content="r=" HorizontalAlignment="Left" Margin="15,62,0,0" VerticalAlignment="Top" Grid.Column="3" Width="29" Grid.Row="1" Height="26" Grid.ColumnSpan="2"/>
+        <StackPanel HorizontalAlignment="Left" Height="410" Margin="208.667,12,0,0" VerticalAlignment="Top" Width="400" Grid.Column="2" Grid.RowSpan="2" IsEnabled="False" AutomationProperties.IsOffscreenBehavior="Onscreen">
+            <Canvas x:Name="canvas1" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="400" Visibility="Visible" AutomationProperties.IsOffscreenBehavior="Onscreen" Focusable="True" ClipToBounds="True">
+                <Canvas.Background>
+                    <ImageBrush ImageSource="index.png" Stretch="Uniform" />
+                </Canvas.Background>
+            </Canvas>
+        </StackPanel>
+        <Button x:Name="button2" Content="Про програму" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="116" Height="20" Margin="3.667,0,0,48" Click="button2_Click_1" Grid.Column="2" Grid.Row="1"/>
+        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="23" Margin="41,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="3" PreviewTextInput="r_PreviewTextInput"/>
+        <TextBox x:Name="textBox5" HorizontalAlignment="Left" Height="23" Margin="41,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <Button x:Name="button6" Content="Перемістити" HorizontalAlignment="Left" Margin="0,306,0,0" VerticalAlignment="Top" Width="119" Click="button6_Click" Grid.Column="4" Grid.Row="1" Grid.ColumnSpan="2" Height="20"/>
+        <Label x:Name="label7_Copy" Content="x=" HorizontalAlignment="Left" Margin="16,228,0,0" VerticalAlignment="Top" Grid.Column="3" Width="25" Grid.Row="1" Height="26"/>
+        <Label x:Name="label8_Copy" Content="y= " HorizontalAlignment="Left" Margin="16,265,0,0" VerticalAlignment="Top" Width="25" Grid.Column="3" Grid.Row="1" Height="26"/>
+        <Label x:Name="label2" Content="Зміна координат" Grid.Column="3" HorizontalAlignment="Left" Margin="38,204.333,0,0" VerticalAlignment="Top" Grid.Row="1" Grid.ColumnSpan="3" Height="27" Width="103"/>
+        <Label x:Name="label7_Copy1" Content="x=" HorizontalAlignment="Left" Margin="15,49,0,0" VerticalAlignment="Top" Grid.Column="3" Width="25" Height="26" Grid.RowSpan="2"/>
+        <Label x:Name="label8_Copy1" Content="y= " HorizontalAlignment="Left" Margin="16,30,0,0" VerticalAlignment="Top" Width="25" Grid.Column="3" Grid.Row="1" Height="26"/>
+
+
+    </Grid>
+</Window>

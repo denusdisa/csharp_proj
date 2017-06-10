@@ -1,0 +1,16 @@
+c:\users\dushka\documents\visual studio 2015\Projects\csharp_proj\csharp_proj\bin\Debug\csharp_proj.exe.config
+C:\Users\dushka\documents\visual studio 2015\Projects\csharp_proj\csharp_proj\obj\Debug\csharp_proj.csprojResolveAssemblyReference.cache
+C:\Users\dushka\documents\visual studio 2015\Projects\csharp_proj\csharp_proj\obj\Debug\MainWindow.g.cs
+C:\Users\dushka\documents\visual studio 2015\Projects\csharp_proj\csharp_proj\obj\Debug\App.g.cs
+C:\Users\dushka\documents\visual studio 2015\Projects\csharp_proj\csharp_proj\obj\Debug\csharp_proj_MarkupCompile.cache
+C:\Users\dushka\documents\visual studio 2015\Projects\csharp_proj\csharp_proj\obj\Debug\csharp_proj_MarkupCompile.lref
+C:\Users\dushka\documents\visual studio 2015\Projects\csharp_proj\csharp_proj\bin\Debug\csharp_proj.exe
+C:\Users\dushka\documents\visual studio 2015\Projects\csharp_proj\csharp_proj\bin\Debug\csharp_proj.pdb
+C:\Users\dushka\documents\visual studio 2015\Projects\csharp_proj\csharp_proj\obj\Debug\MainWindow.baml
+C:\Users\dushka\documents\visual studio 2015\Projects\csharp_proj\csharp_proj\obj\Debug\csharp_proj.g.resources
+C:\Users\dushka\documents\visual studio 2015\Projects\csharp_proj\csharp_proj\obj\Debug\csharp_proj.Properties.Resources.resources
+C:\Users\dushka\documents\visual studio 2015\Projects\csharp_proj\csharp_proj\obj\Debug\csharp_proj.csproj.GenerateResource.Cache
+C:\Users\dushka\documents\visual studio 2015\Projects\csharp_proj\csharp_proj\obj\Debug\csharp_proj.exe
+C:\Users\dushka\documents\visual studio 2015\Projects\csharp_proj\csharp_proj\obj\Debug\csharp_proj.pdb
+C:\Users\dushka\documents\visual studio 2015\Projects\csharp_proj\csharp_proj\obj\Debug\about.g.cs
+C:\Users\dushka\documents\visual studio 2015\Projects\csharp_proj\csharp_proj\obj\Debug\About.baml
